@@ -1,0 +1,127 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #fbfbf8;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+.chef-icon {
+    max-width: 750px;
+    height: auto;
+    margin-top: -2.9cm;
+    z-index: 0;
+}
+
+.button {
+    margin-right: 10px;
+    z-index: 2; /* Zorg ervoor dat z-index werkt */
+    position: relative; /* Hierdoor kunnen we de top en left eigenschappen gebruiken */
+    right: -4cm; /* Verplaats de button 1 cm naar links (negatieve waarde) */
+    top: -4cm; /* Verplaats de button 2 cm omhoog (negatieve waarde) */
+}
+
+.welkom {
+    padding-left: 700px;
+    padding-top: 100px;
+    color: #C82A44;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 5rem;
+}
+
+.introductie {
+    padding-left: 700px;
+    color: #C82A44;
+    font-size: 2.5rem;
+    padding-right: 10px;
+    z-index: 2;
+    position: relative;
+}
+
+.oven-image
+{
+    position: center;
+}
+
+.container2 {
+    display: grid;
+    grid-template-columns: repeat(6, 6cm); /* Elke afbeelding heeft een breedte van 6 cm */
+    gap: 4px; /* Ruimte tussen afbeeldingen */
+    justify-content: center; /* Center de grid horizontaal */
+    align-items: center; /* Center de grid verticaal */
+    margin-top: 10cm;
+}
+
+.container2 img {
+    width: 100%; /* Zorgt ervoor dat elke afbeelding binnen zijn kolom blijft */
+    height: auto; /* Behoudt de verhoudingen van de afbeeldingen */
+}
+
+.pizza
+{
+    margin-left: 600px;
+}
+
+.oven-image {
+    margin-left: 600px;
+    margin-top: 100px;
+}
+
+.hoofdtekst {
+color: #C82A44;
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+font-size: 5rem;
+margin-left: 500px;
+}
+
+.pijl {
+    position: absolute;
+    top: 150px; /* Aanpassen aan je gewenste verticale positie */
+    left: 50px; /* Aanpassen aan je gewenste horizontale positie */
+    width: 2cm;
+    height: auto;
+    z-index: 1; /* Zorg ervoor dat de pijl boven andere elementen in de header staat */
+}
+
+.klaar {
+    position: absolute;
+    top: 50px; /* Aanpassen aan je gewenste verticale positie */
+    right: 10px; /* Aanpassen aan je gewenste horizontale positie */
+    width: 8cm;
+    height: auto;
+    z-index: 1; /* Zorg ervoor dat de knop boven andere elementen in de header staat */
+}
+
+.container3 {
+    position: relative; /* Zet de container op relatieve positie voor absolute positionering van de afbeeldingen */
+    display: grid;
+    grid-template-columns: repeat(6, 6cm); /* Elke afbeelding heeft een breedte van 6 cm */
+    justify-content: center; /* Center de grid horizontaal */
+    align-items: center; /* Center de grid verticaal */
+    margin-top: -8cm;
+}
+
+.container3 img {
+    position: absolute; /* Plaats de afbeeldingen absoluut binnen de container */
+    top: -4.2cm; /* Plaats de afbeeldingen bovenaan op dezelfde positie */
+    left: 17.1cm; /* Plaats de afbeeldingen links op dezelfde positie */
+    width: 24%; /* Neem de volledige breedte van de container in */
+    height: auto; /* Behoud de aspect ratio van de afbeeldingen */
+}
+
+.pizza-ingredient {
+    display: none; /* Verberg alle ingrediënten standaard */
+}
+
+
+
+
+
+
+
